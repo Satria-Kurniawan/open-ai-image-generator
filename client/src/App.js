@@ -58,7 +58,7 @@ function App() {
           Masukan
           <TypeAnimation
             sequence={[
-              "text yang akan digenerate...", // Types 'One'
+              "text untuk digenerate...", // Types 'One'
               1000, // Waits 1s
               "ukuran gambar...", // Deletes 'One' and types 'Two'
               2000, // Waits 2s
