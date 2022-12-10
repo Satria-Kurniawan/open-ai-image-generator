@@ -4,6 +4,10 @@ require("dotenv").config()
 const cors = require("cors")
 const PORT = process.env.PORT || 5001
 
+app.get("/", (req, res) => {
+  res.send("Server ready!")
+})
+
 app.use(cors({ origin: process.env.CLIENT_URL }))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
