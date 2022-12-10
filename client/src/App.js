@@ -120,7 +120,11 @@ function App() {
             </div>
           </div>
           {loading ? (
-            <img src="/loading.svg" className="w-16 h-16 mx-auto" />
+            <img
+              src="/loading.svg"
+              alt="loading"
+              className="w-16 h-16 mx-auto"
+            />
           ) : (
             <button
               type="submit"
@@ -138,10 +142,11 @@ function App() {
 
         {images.length > 0 && <h1 className="font-semibold mb-5">Hasil</h1>}
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-3">
-          {images.map((image, i) => (
+          {images?.map((image, i) => (
             <div key={i} className="w-full rounded-xl overflow-hidden">
               <img
                 src={image.url}
+                alt="hasil"
                 className="w-full rounded-xl object-contain"
               />
             </div>
